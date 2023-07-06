@@ -1,32 +1,27 @@
-/*
- * @lc app=leetcode id=485 lang=cpp
- *
- * [485] Max Consecutive Ones
- */
+#include <stdio.h>
+#include <stdlib.h>
 
-// @lc code=start
-#include <cstdio>
+int symbolic_to_octal(const char *perm_string)
+{
+    // Waiting to be implemented
+    unordered_map<char, int> map;
+  
+  map['r'] = 4;
+  map['w'] = 2;
+  map['x'] = 1;
+  map['-'] = 0;
+  
+  
+  
+    return -1;
+}
 
-using namespace std;
-class Solution {
-public:
-    int findMaxConsecutiveOnes(vector<int>& nums) {
-        int maxCount = 0;
-        int count = 0;
-        for (int i = 0; i < nums.size(); i++)
-        {
-            if(nums[i] == 1)
-            {
-                count++;
-            }
-            else{
-                //maxCount = std::Math.max(maxCount, count);
-                count = 0;
-            }
-        }
-        //return maxCount = std::Math.max(maxCount, count);
-        return maxCount;
-    }
-};
-// @lc code=end
+#ifndef RunTests
+int main()
+{
+  
+    // Should write 752
+    printf("%d", symbolic_to_octal("rwxr-x-w-"));
+}
+#endif
 
